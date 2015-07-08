@@ -1,0 +1,17 @@
+
+<form>
+  <input type="hidden" name="post[id]" value="<%= post.escape("id")%>">
+
+  <label>
+    Title
+    <input type="text" name="post[title]" value="<%= post.escape("title")%>">
+
+  </label>
+
+  <label>
+    body
+    <textarea name="post[body]"><%= post.escape("body")%></textarea>
+  </label>
+
+  <button class="submit-form">Submit</button>
+</form>
